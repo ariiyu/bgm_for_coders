@@ -3,7 +3,9 @@ BgmForCoders::Application.routes.draw do
   get "static_pages/help"
   resources :posts
 
-  resources :users
+  resources :users do
+    resources :posts #, only: [:create, :destroy]
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
