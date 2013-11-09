@@ -1,14 +1,50 @@
 <div class="center hero-unit">
-  <h1>Welcome to the Sample App</h1>
+  <h1>プログラマのためのBGM</h1>
 
   <h2>
-    This is the home page for the
-    <a href="http://railstutorial.jp/">Ruby on Rails Tutorial</a>
-    sample application.
+    BGMを選んで、きょうやる作業を
+    <a href="http://railstutorial.jp/">宣言</a>
+    しよう
   </h2>
 
-  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+
 </div>
 
-<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+<h4>定番</h4>
+<iframe width="70%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/84169498"></iframe>
+<h4>Ambient</h4>
+<iframe width="70%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/84169498"></iframe>「これで作業はじめる！」by PHPer
+<h4>EDM</h4>
+<iframe width="70%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/115359489"></iframe> 「逆に集中できん」by ゆるフロントエンド
+<h4>ELECTROHOUSE</h4>
+<iframe width="70%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/55126430"></iframe> 「あがるわー」by Rails使い
+<h4>自然音</h4>
+<iframe width="70%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/19286883"></iframe> 「疲れてきたらこれ！」by PHPer
 
+<!--
+作業内容宣言、
+コメント、
+SNSチェック、
+投票ボタン
+-->
+<!-- 投票の多い曲のランキングを作成する -->
+<!-- 各カテゴリは、APIで自動選局させたい -->
+
+<!-- <div class="music"></div> -->
+
+<ul id="selectATag" style="list-style:none; display:none;">
+  <li><a href="" style="display:none;">Hot</a>
+    <ul class="subNav">
+      <li><a href="#">Coffee</a></li>
+      <li><a href="#">下北沢</a></li>
+      <li><a href="#">Ambient</a></li>
+      <li><a href="#">EDM</a></li>
+      <li><a href="#">ELECTROHOUSE</a></li>
+      <li><a href="#">激おこ</a></li>
+      <li><a href="#">クリスマス</a></li>
+      <li><a href="#">ねこ</a></li>
+      <li><a href="#">Coding</a></li>
+      <li><a href="#">初音ミク</a></li>
+    </ul>
+  </li>
+</ul>
