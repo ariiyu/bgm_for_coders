@@ -69,13 +69,17 @@ p {
   color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 14px;
   font-weight: bold;
   line-height: 1;
   &:hover {
     color: white;
     text-decoration: none;
   }
+}
+
+ul.pull-right {
+  margin-top: 14px;
 }
 
 /* footer */
